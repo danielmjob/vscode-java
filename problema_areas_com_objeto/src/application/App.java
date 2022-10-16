@@ -7,7 +7,7 @@ import entities.Retangulo;
 import entities.Circulo;
 
 
-  /*
+        /*
          * ESSE PROGRAMA TEM O INTUITO DE TREINAR O CONHECIMENTO EM OBJETOS (ATRIBUTOS E METODOS)
          * ESTRUTURA DO WHILE E SWITCH CASE POR ISSO FIZ APENAS COM ALGUMAS FIGURAS.
          * ESSE CODIGO AINDA PODE SER REFATORADO (MELHORADO) COM O TEMPO
@@ -75,7 +75,7 @@ public class App {
         case 3:
                 //Circulo
                 System.out.println();
-                
+
                 Circulo z = new Circulo();
                 System.out.println("<< CÍRCULO >>");
                 
