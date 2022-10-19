@@ -7,8 +7,6 @@ public class CurrencyConverter {
     public static double calcularDolar(double totalDolar, double precoDolar){
         double valorFinalReal = (totalDolar * precoDolar);
         return valorFinalReal += valorFinalReal*IOF;
-
-        //return totalDolar * precoDolar * (1.0 + IOF);
     }
     
 }

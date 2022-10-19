@@ -1,5 +1,4 @@
 package application;
-import java.text.BreakIterator;
 import java.util.Locale;
 import java.util.Scanner;
 import util.CurrencyConverter;
