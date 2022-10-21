@@ -1,4 +1,3 @@
-import java.lang.ref.Cleaner;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -36,6 +35,18 @@ public class App {
             System.out.print("Valor no vetor [" + i + "] ");
             System.out.println(String.format("%.1f", vet[i]));
         }
+
+
+        //FOR para leitura do vetor e criação de soma e media
+        double soma = 0.0;
+        for (int i = 0; i < num; i++){
+            soma += vet[i]; // a soma vai receber o que estiver na posição [i] do vetor
+        }
+
+        double media = soma / num; // a média é dada pelos valores somados dividido pelos números digitados
+
+        System.out.printf("Soma de valores digitados: %.2f%n",soma);
+        System.out.printf("Média de valores digitados: %.2f%n",media);
 
 
         sc.close();
