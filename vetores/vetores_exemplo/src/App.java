@@ -7,6 +7,8 @@ public class App {
 
         /*
          * CRIANDO VETORES
+         * salvando dados primitivos
+         * 
         */
         
         Locale.setDefault(Locale.US);
