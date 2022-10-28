@@ -69,16 +69,7 @@ public class App {
                 }
             }
         }
-
-
-
-        /*
-         * Esquerda = COLUNA (J) -1
-         * Direita  = COLUNA (J) +1
-         * Cima     = LINHA (I) -1
-         * Baixo    = LINHA (I) -1
-        */
-
+     
         sc.close();
     }
 }
