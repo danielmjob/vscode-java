@@ -1,12 +1,8 @@
-import java.text.DateFormat;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
-
-import javax.swing.text.DateFormatter;
 
 public class App4 {
     public static void main(String[] args) {
