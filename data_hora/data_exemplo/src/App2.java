@@ -25,7 +25,7 @@ public class App2 {
         System.out.println(d05.format(fmt1)); //mostrar apenas data
         System.out.println(d05.format(fmt2)); //mostrar data e hora
 
-        DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME; // usando padrão pré definido
+         DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME; // usando padrão pré definido
         System.out.println(d05.format(fmt4));
 
         
