@@ -1,6 +1,6 @@
 package entities;
 
-import java.sql.Date;
+import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,10 +19,10 @@ public class Order {
         public Order() {
     }
 
-    public Order(Date moment, OrderStatus orderStatus, Client cliente) {
+    public Order(Date moment, OrderStatus orderStatus, Client client) {
         this.moment = moment;
         this.status = orderStatus;
-        this.client = cliente;
+        this.client = client;
     }
 
     public Date getMoment() {
@@ -73,9 +73,9 @@ public class Order {
     public String toString(){
         StringBuilder sb = new StringBuilder();
         sb.append("Order moment: " + sdf.format(moment));
-        sb.append("Order status: ");
+        sb.append(" Order status: ");
         sb.append(status + "\n");
-        sb.append(" Client: ");
+        sb.append("Client: ");
         sb.append(client + "\n" );
         sb.append("Order items: \n");
         for (OrderItem orderItem : items) {
@@ -87,7 +87,5 @@ public class Order {
 
     }
 
-
-
-  
+ 
 }

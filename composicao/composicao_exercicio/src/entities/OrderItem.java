@@ -53,7 +53,7 @@ public class OrderItem {
         sb.append(" Quantity: ");
         sb.append(quantity);
         sb.append(", Subtotal: $");
-        sb.append(subTotal() + "\n");
+        sb.append(String.format("%.2f",subTotal()));
 
         return sb.toString();
     }

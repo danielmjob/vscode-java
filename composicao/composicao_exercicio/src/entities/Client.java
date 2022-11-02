@@ -1,6 +1,6 @@
 package entities;
 
-import java.sql.Date;
+import java.util.Date;
 import java.text.SimpleDateFormat;
 
 public class Client {
@@ -50,7 +50,7 @@ public class Client {
         sb.append(" ");
         sb.append(sdf.format(birthDate));
         sb.append(" - ");
-        sb.append(email + "\n");
+        sb.append(email + "");
         return sb.toString();
     }
     
