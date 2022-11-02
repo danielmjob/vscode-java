@@ -24,27 +24,27 @@ public class App {
         Comment comment1 = new Comment(c1);
         Comment comment2 = new Comment(c2);
 
-       Post post1 = new Post(momentAtual, title1, content1, like1);
-       post1.addComment(comment1);
-       post1.addComment(comment2);
+        Post post1 = new Post(momentAtual, title1, content1, like1);
+        post1.addComment(comment1);
+        post1.addComment(comment2);
 
-       System.out.println(post1.toString());
-
-
-       System.out.println();
+        System.out.println(post1.toString());
 
 
-       String title2 = "Good night guys";
-       int like2 = 5;
-       momentAtual = momentAtual.plusMinutes(10).plusSeconds(10); // somei 10 min e 10 segundos na hora do primeiro só pra dar uma leve diferença
+        System.out.println();
 
-       String content2 = "See you tomorrow";
 
-       String c3 = "Good night";
-       String c4 = "May the Force be with you";
+        String title2 = "Good night guys";
+        int like2 = 5;
+        momentAtual = momentAtual.plusMinutes(10).plusSeconds(10); // somei 10 min e 10 segundos na hora do primeiro só pra dar uma leve diferença
 
-       Comment comment3 = new Comment(c3);
-       Comment comment4 = new Comment(c4);
+        String content2 = "See you tomorrow";
+
+        String c3 = "Good night";
+        String c4 = "May the Force be with you";
+
+        Comment comment3 = new Comment(c3);
+        Comment comment4 = new Comment(c4);
 
         Post post2 = new Post(momentAtual, title2, content2, like2);
         post2.addComment(comment3);
