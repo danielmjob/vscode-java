@@ -8,7 +8,8 @@ public class HourContract {
     private Double valuePerHour;
     private Integer hours;
 
-    public HourContract() {
+    public HourContract(){
+
     }
 
     public HourContract(LocalDate date, Double valuePerHour, Integer hours) {
@@ -41,9 +42,9 @@ public class HourContract {
         this.hours = hours;
     }
 
- // Esse método retorna o valor total por contrato
-    public double totalValue(){
-        return valuePerHour * hours;
-    }
+    // Método para calculo de total das horas do contrato
 
+    public Double totalValue(){
+        return hours * valuePerHour;
+    }
 }
