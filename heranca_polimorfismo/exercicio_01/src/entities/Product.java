@@ -30,7 +30,11 @@ public class Product {
     }
 
     public String priceTag(){
-        return String.valueOf(price);
+        return getName()
+                +" $ "
+                + String.format("%.2f", price);
+
+        //Notebook $ 1100.00
     }
     
 }
