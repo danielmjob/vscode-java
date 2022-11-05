@@ -57,6 +57,7 @@ public class App {
 
             }
         }
+        
         System.out.println();
         System.out.println("PRICE TAGS:");
         System.out.println();

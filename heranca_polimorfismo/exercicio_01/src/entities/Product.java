@@ -33,8 +33,5 @@ public class Product {
         return getName()
                 +" $ "
                 + String.format("%.2f", price);
-
-        //Notebook $ 1100.00
     }
-    
 }

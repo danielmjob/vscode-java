@@ -5,7 +5,7 @@ public class ImportedProduct extends Product {
     private Double customsFee;
 
     public ImportedProduct(){
-        
+       super(); 
     }
 
     public ImportedProduct(String name, Double price, Double customsFee) {
@@ -35,6 +35,5 @@ public class ImportedProduct extends Product {
             + " (Customs fee: $ "
             + String.format("%.2f", customsFee)
             +")";
-    }
-    
+    } 
 }

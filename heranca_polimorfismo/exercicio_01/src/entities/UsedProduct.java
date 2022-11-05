@@ -34,10 +34,5 @@ public class UsedProduct extends Product {
                 + " (Manufacture date: "
                 + sdfDMY.format(manufacturedDate)
                 +")";
-
     }
-
-
-
-
 }
