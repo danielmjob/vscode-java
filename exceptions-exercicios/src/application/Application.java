@@ -21,14 +21,13 @@ public class Application {
         Integer number = sc.nextInt();
 
         System.out.print("Cliente: ");
-        String holder = sc.next();
-
         sc.nextLine();
+        String holder = sc.nextLine();
 
         System.out.print("Limite para saque: ");
         Double withdrawLimit = sc.nextDouble();
 
-        // o tipo da conta fiz em harcode mesmo pois não fiz a conta poupança
+        // o tipo da conta fiz em hardcode mesmo pois não fiz a conta poupança
         TipoConta tipoConta = TipoConta.CONTA_CORRENTE;
 
         ContaCorrente cc = new ContaCorrente(number, holder, 0.0, withdrawLimit, tipoConta);
