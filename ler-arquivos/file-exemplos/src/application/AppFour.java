@@ -14,7 +14,8 @@ public class AppFour {
         String path = "c:\\temp\\out.txt";
 
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) { 
-            // Sempre cria um novo arquivo. Para escrever dando continuidade acrescente o ,new assim new FileWriter(path,new)
+            // Sempre cria um novo arquivo. 
+            // Para escrever dando continuidade acrescente o ,new assim new FileWriter(path,new)
             for (String line : lines) {
                 bw.write(line);
                 bw.newLine();
