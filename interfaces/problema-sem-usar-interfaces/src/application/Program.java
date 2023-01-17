@@ -29,7 +29,7 @@ public class Program {
          * exemplos
          */
 
-        /* Resolvendo sem usar INTERFACES */
+        /* Resolvendo com uso de INTERFACES */
 
         System.out.println();
 
