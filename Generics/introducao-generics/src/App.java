@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-import services.PrintService;
+import services.PrintServiceString;
 
 public class App {
 
@@ -12,18 +12,18 @@ public class App {
          * exemplo. Em seguida, informar qual foi o primeiro valor informado.
          */
 
-         //Resolução apenas para números Inteiros
+         //Resolução para Inteiros e String
 
         System.out.println();
         Scanner sc = new Scanner(System.in);
 
-        PrintService ps = new PrintService();
+        PrintServiceString ps = new PrintServiceString();
 
         System.out.print("How many values? ");
         int num = sc.nextInt();
 
         for (int i = 0; i < num; i++) {
-            int value = sc.nextInt();
+            String value = sc.next();
             ps.addValue(value);
         }
 
