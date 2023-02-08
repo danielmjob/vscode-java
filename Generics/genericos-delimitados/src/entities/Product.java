@@ -18,7 +18,7 @@ public class Product implements Comparable<Product> {
         return price;
     }
     public void setPrice(Double price) {
-        this.price = price;
+        this.price = price; 
     }
 
     
