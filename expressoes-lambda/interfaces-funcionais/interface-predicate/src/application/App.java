@@ -26,10 +26,9 @@ public class App {
         list.add(new Product("Tablet", 350.00));
         list.add(new Product("HD Case", 80.9));
 
-        // usando expressão lambda declarada
-        Predicate<Product> pred = p -> (p.getPrice() >= 100.0);
-        
-        list.removeIf(pred);
+        // usando expressão lambda inline (forma mais clean possivel)
+                
+        list.removeIf(p -> (p.getPrice() >= 100.0));
 
         for (Product product : list) {
             System.out.println(product);
