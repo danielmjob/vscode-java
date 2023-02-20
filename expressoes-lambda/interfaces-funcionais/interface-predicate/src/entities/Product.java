@@ -26,11 +26,6 @@ public class Product {
         this.price = price;
     }
 
-    // usando método NÃO statico
-    public boolean nonStaticProductPredicate(){
-        return price >= 100.0;
-    }
-
     @Override
     public String toString() {
         return name + ", " + price;
