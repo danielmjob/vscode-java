@@ -35,32 +35,51 @@ public class App {
          * Bob Brown: 61
          */
 
+    	
          Scanner sc = new Scanner(System.in);
 
+         // Classe Map, armazenda dados no estilo de um Json, neste caso possui dois valores, texto e inteiro. 
          Map<String, Integer> votes = new LinkedHashMap<>();
 
          System.out.println("Enter file full path: ");
+         
+         // Leitura do path do arquivo, usuário digita.
          String path = sc.nextLine();
-
+         
+         
+         // BufferedReader -> Leitura de arquivos em buffer (linha a linha).
+         // Exemplo de buffer: Youtube pré carregar o vídeo em partes.
+         
          try (BufferedReader br = new BufferedReader(new FileReader(path))){
 
+        	//Leitura linha a linha (br.readLine pega a próxima).
             String line = br.readLine();
+            
+            //Condição enquanto tiver dados do arquivo.
             while(line != null){
-
+            	
+            	//Para determinada linha, retorne um array separando por vírgulas
+            	//Ex:  Marcos, 100 -> [Marcos, 100] array com duas posições. 
+            	
                 String[] fields = line.split(",");
+                //Armazena nome
                 String name = fields[0];
+                
+                //Armazena contador
                 int count = Integer.parseInt(fields[1]);
 
+                //Verifica se o nome já existe na lista pra somar 
                 if(votes.containsKey(name)){
                     int votesSoFar = votes.get(name);
                     votes.put(name, count+votesSoFar);
                 }else{
+                	//Apenas armazena
                     votes.put(name, count);
                 }
-
+                //Próxima iteração
                 line = br.readLine();
             }
-
+            //Imprime todos os votos.
             for (String key : votes.keySet()) {
 				System.out.println(key + ": " + votes.get(key));
 			}
