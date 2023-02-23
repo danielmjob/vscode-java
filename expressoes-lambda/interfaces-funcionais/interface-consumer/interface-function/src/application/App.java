@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import entities.Product;
-import util.UpperCaseName;
+
 
 public class App {
     public static void main(String[] args) {
@@ -26,10 +26,10 @@ public class App {
          * função que aplica uma função a todos elementos de uma stream
          */
 
-        List<String> names = list.stream().map(new UpperCaseName()).collect(Collectors.toList());
+        List<String> names = list.stream().map(Product::staticUpperCaseName).collect(Collectors.toList());
 
         // função map só funciona em stream por isso converte para stream primeiro 
-        // na função map ela aplica a cada valor da coleção a função que foi chamada, nesse caso UpperCaseName
+        // na função map ela aplica a cada valor da coleção a função que foi chamada, nesse caso Product::staticUpperCaseName
         // depois converte novamente para lista
 
         names.forEach(System.out::println);
