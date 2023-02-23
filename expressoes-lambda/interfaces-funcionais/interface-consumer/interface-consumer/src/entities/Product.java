@@ -22,8 +22,8 @@ public class Product {
     }
 
 
-    public static void staticPriceUpdate(Product p) {
-        p.setPrice(p.getPrice() * 1.1);
+    public void nonStaticPriceUpdate() {
+        price *= 1.1;
     }
 
 
