@@ -26,30 +26,34 @@ public class Program {
 
             int rows2 = st.executeUpdate("UPDATE seller SET BaseSalary = 3090 WHERE DepartmentId = 2");
 
+            
+            // Retirado para testar o caminho "Feliz da operação"
 
             // Gerando um erro propositalmente durante o processo
-            // Dessa forma o programa vai quebrar porem mas devido ao uso de (setAutoCommit, commit e rollback) o promagam não executará nada
+            // Dessa forma o programa vai quebrar porem mas devido ao uso de (setAutoCommit,
+            // commit e rollback) o promagam não executará nada
 
-            int x = 1;
-            if (x < 2){
-                throw new SQLException("FAKE ERROR");
-            }
+            // int x = 1;
+            // if (x < 2){
+            // throw new SQLException("FAKE ERROR");
+            // }
 
-            
             System.out.println("rows1 " + rows1);
             System.out.println("rows2 " + rows2);
 
-            conn.commit(); // colocado no final para que so sejam feitas as alterações se tudo tiver dado certo
+            conn.commit(); // colocado no final para que so sejam feitas as alterações se tudo tiver dado
+                           // certo
 
         } catch (SQLException e) {
             try {
 
-                conn.rollback(); // em caso de algum erro (exception) desfaça tudo ou seja volte para o modo original
+                conn.rollback(); // em caso de algum erro (exception) desfaça tudo ou seja volte para o modo
+                                 // original
                 throw new DbException("Trasaction rolled back! Caused by: " + e.getMessage());
 
             } catch (SQLException e1) {
                 throw new DbException("Erro trying to rollback! Caused by:" + e1.getMessage());
-            } 
+            }
 
         } finally {
             DB.closeStatement(st);
