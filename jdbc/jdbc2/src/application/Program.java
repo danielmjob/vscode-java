@@ -20,7 +20,7 @@ public class Program {
 
             st = conn.createStatement(); // instanciando um objeto do tipo Statement
 
-            rs = st.executeQuery("select * from department"); // comando para poder usar comandos SQL
+            rs = st.executeQuery("select * from department"); // comando para poder executar comandos SQL
 
             while (rs.next()) { // o next() retorna falso se caso estiver no ultimo
                 System.out.println(rs.getInt("Id") + ", " + rs.getString("Name")); // deve estar com mesno nome que esta
